@@ -47,23 +47,23 @@
       </a>
     </div>
     <div class="breif">
-      <strong>إضافة مهمّة فرديّة:</strong> يُمكن إضافة مهمّة فرديّة وإرسالها إلى جميع المتدرّبين. كلّ متدرّب ستصل إليه رسالةً فيها تفاصيل المهمّة ورابط يتيح للمتدرّب تسليمها. في حال أرسل المتدرّب إجابته يقرّر المُرشد أن يقبلها أو يرفضها، إذا قَبِلها يمتلك المتدرّب المهارة ذات العلاقة، وإن رفضها فلا يمتلك المتدرّب المهارة. في حال تأخّر المتدرّب عن تسليم المهمّة وتجاوز عدد الساعات الأقصى لتسليمها فإنّه لا يحصل على المهارة كذلك.
+      <strong>إضافة مهمّة جماعيّة:</strong> يُمكن إضافة مهمّة جماعيّة وإرسالها إلى المجموعات التي تمّ إنشاؤها آليًا. كلّ مجموعةٍ ستصل إليها رسالةً فيها تفاصيل المهمّة ورابط يتيح للقائد تسليمها. في حال أرسل القائد الإجابة يقرّر المُرشد أن يقبلها أو يرفضها، كما يُمكن للمُرشد أن يراجع توزيع المهارات على أعضاء المجموعة والذي أعدّه قائد المجموعة. إذا قَبِل المُرشد الإجابة فإن كلّ متدرّبٍ سيمتلك المهارة ذات العلاقة، وإن رفضها فلن يمتلك أيّ عضو أيّ مهارة. في حال تأخّر القائد عن تسليم المهمّة وتجاوز عدد الساعات الأقصى لتسليمها فإنّه لا يحصل أحدٌ على أيّ مهارة.
     </div>
     <div class="form-container">
       <form id="form">
         <div id="preview-mode" class="preview-container">
           <div class="subject">
-            مهمّة فرديّة جديدة: <span id="title-preview">title</span>!
+            مهمّة جماعيّة جديدة: <span id="title-preview">title</span>!
           </div>
           <div class="content">
-            <br />خالد السليمان، السلام عليكم.<br /><br />
+            <br />أعضاء مجموعة ”A“، السلام عليكم.<br /><br />
             <span id="feedback-preview">feedback</span>
-            مهمّة جديدة بانتظار إبداعاتِك ويجب تسليمها قبل مرور <span id="expires-after-preview">expiresAfter</span> ساعة من الآن.
+            مهمّة جماعيّة جديدة بانتظار إبداعاتِ مجموعتكم ويجب تسليمها من قِبل قائد المجموعة قبل مرور <span id="expires-after-preview">expiresAfter</span> ساعة من الآن. أعضاء مجموعة ”A" هم: أيمن خالد، وداد هيثم، فؤاد ماجد. سيكون قائد المجموعة لهذه المهمّة: فؤاد ماجد.<br /><br />كقائدٍ للمجموعة يجب عليك التنسيق بينك وبين أعضاء المجموعة لفهم المتطلّبات، ومن ثمّ عليك تحديد الأدوار وتوزيع المهام، ومن ثمّ عليك متابعة سير المهام من خلال أيّ وسيلةٍ متاحةٍ، ولاحقًا عليكَ تسليم المهام التي تعاونتكم كمجموعةٍ عليها من خلال الرابط أسفل هذه الرسالة.<br /><br />
             <span id="description-preview">description</span>
             <span id="references-preview">references</span>
-            في حال رغبت بتسليم المهمّة، تفضّل بزيارة الرابط:<br />
-            <a href="#">https://cloudsystems.sa/individual-tasks/e0cac4ee-98f3-4c23-acd8-f12985a15573/deliver</a><br /><br />
-            وفي حال احتجت لمساعدةٍ فلا تتواني بالبحث عنها في قناة المسار <span id="channel-preview">channel</span> في تطبيق Slack.<br /><br />
+            إذا كنت قائدًا للمجموعة ورغبت بتسليم المهمّة، تفضّل بزيارة الرابط:<br />
+            <a href="#">https://cloudsystems.sa/group-tasks/e0cac4ee-98f3-4c23-acd8-f12985a15573/deliver</a><br /><br />
+            وفي حال احتجت لمساعدةٍ فلا تتوانى بالبحث عنها في القناة الخاصّة بمجموعتك A أو القناة العامّة للمسار <span id="public-channel-preview">public channel</span> في تطبيق Slack.<br /><br />
             كلّ الحظّ النبيل.<br />
             مؤسّسة أنظمة غيمة (Cloud Systems).<br /><br />
           </div>
@@ -85,14 +85,14 @@
           <textarea id="description" placeholder="أنشيء صفحة ويب تُبرز فيها سيرتك الذاتيّة." required></textarea>
         </div>
         <div class="form-input">
-          <label for="mentors">البريد الإلكتروني للمُرشدين (مطلوب)</label>
+          <label for="mentorEmails">البريد الإلكتروني للمُرشدين (مطلوب)</label>
           <p>المُرشد هو من يقوم بعملية التصحيح والمتابعة. يُمكن إضافة مُرشد أو أكثر من خلال وضع فاصلة باللغة الإنجليزيّة "," بين كلّ مُرشدٍ وآخر.</p>
-          <input type="text" id="mentors" placeholder="example@example.com" required />
+          <input type="text" id="mentorEmails" placeholder="example@example.com" required />
         </div>
         <div class="form-input">
-          <label for="skill">المهارة ذات العلاقة (مطلوب)</label>
-          <p>تأكّد من نسخ اسم المهارة من <a href="https://docs.google.com/spreadsheets/d/1-8ji_oF0tjxQnIdKJdszpJz8UYiK6BEhFMisz0fkeiM/edit?usp=sharing" target="_blank">جدول المهارات الخاصّة بهذا البرنامج التدريبيّ</a>؛ لأنّ المتدرّب سيمتلك هذه المهارة بمجرّد إتمامه لهذه المهمّة بشكلٍ صحيح. يجب إدخال مهارة واحدة فقط.</p>
-          <input type="text" id="skill" placeholder="Quality Assurance Fundamentals" required />
+          <label for="skills">المهارات ذات العلاقة (مطلوب)</label>
+          <p>تأكّد من نسخ اسم المهارة من <a href="https://docs.google.com/spreadsheets/d/1-8ji_oF0tjxQnIdKJdszpJz8UYiK6BEhFMisz0fkeiM/edit?usp=sharing" target="_blank">جدول المهارات الخاصّة بهذا البرنامج التدريبيّ</a>. يُمكن إضافة مهارة أو أكثر من خلال وضع فاصلة باللغة الإنجليزيّة "," بين كلّ مهارةٍ وأخرى.</p>
+          <input type="text" id="skills" placeholder="Quality Assurance Fundamentals" required />
         </div>
         <div class="form-input">
           <label for="references">المراجع (إن وُجد)</label>
@@ -101,8 +101,8 @@
         </div>
         <div id="jsGrid"></div>
         <div class="form-input">
-          <label for="channel">قناة Slack (مطلوب)</label>
-          <input type="text" id="channel" placeholder="developer" required />
+          <label for="publicChannel">قناة Slack (مطلوب)</label>
+          <input type="text" id="publicChannel" placeholder="developer" required />
         </div>
         <div class="form-input">
           <label for="expiresAfter">عدد الساعات الأقصى لتسليم المهمّة (مطلوب)</label>
@@ -122,19 +122,46 @@
   </div>
   <script type="text/javascript">
 
-    redirectToProfileIfNotLoggedIn();
-    updateLoginBox();
+  checkIfLoginOrNot();
 
-    function updateLoginBox() {
-      var userEmail = document.getElementById('user-email');
-      var cookiesEmail = Cookies.get('email');
-      if (cookiesEmail) {
-        userEmail.innerHTML = '<a href="profile.html">' + cookiesEmail + '</a>';
-      }
+  function checkIfLoginOrNot() {
+    var accessToken = Cookies.get('accessToken');
+    console.log('accessToken', accessToken);
+    if (!accessToken) {
+      return redirectToLogin();
+    } else {
+      $.ajax('https://d2hbxkrooc.execute-api.eu-west-1.amazonaws.com/dev/auth/contributors', {
+        headers: {
+          'Authorization': 'Bearer ' + accessToken,
+        },
+        success: function(data) {
+          console.log('success', data);
+          updateLoginBox();
+        },
+        error: function(data) {
+          return redirectToLogin();
+        }
+      });
     }
+  }
+
+  function redirectToLogin() {
+    Cookies.remove('accessToken');
+    Cookies.remove('email');
+    Cookies.set('redirectUri', window.location.href);
+    window.location.href = 'profile.html';
+  }
+
+  function updateLoginBox() {
+    var userEmail = document.getElementById('user-email');
+    var cookiesEmail = Cookies.get('email');
+    if (cookiesEmail) {
+      userEmail.innerHTML = '<a href="profile.html">' + cookiesEmail + '</a>';
+    }
+  }
 
   var userReferences = [];
-  var references = '';
+  var references = [];
  
   $(function() {
     $('#jsGrid').jsGrid({
@@ -164,9 +191,9 @@
     var title = document.getElementById('title');
     var feedback = document.getElementById('feedback');
     var description = document.getElementById('description');
-    var mentors = document.getElementById('mentors');
-    var skill = document.getElementById('skill');
-    var channel = document.getElementById('channel');
+    var mentorEmailsElement = document.getElementById('mentorEmails');
+    var skillsElement = document.getElementById('skills');
+    var publicChannel = document.getElementById('publicChannel');
     var expiresAfter = document.getElementById('expiresAfter');
     var preview = document.getElementById('preview');
     var edit = document.getElementById('edit');
@@ -182,7 +209,7 @@
     var descriptionPreview = document.getElementById('description-preview');
     var referencesPreview = document.getElementById('references-preview');
     var expiresAfterPreview = document.getElementById('expires-after-preview');
-    var channelPreview = document.getElementById('channel-preview');
+    var publicChannelPreview = document.getElementById('public-channel-preview');
 
     // Hide the error message initially.
     errorMessage.style.display = 'none';
@@ -201,23 +228,32 @@
       return list;
     }
 
+    function parseMentors(mentorEmailsString) {
+      return mentorEmailsString.split(',').map(function(item) {
+        return item.trim().toLowerCase();
+      });
+    }
+
+    function parseSkills(skillsString) {
+      return skillsString.split(',').map(function(item) {
+        return item.trim();
+      });
+    }
+
     // Define variables to be used to send a request.
     var http = new XMLHttpRequest();
-    var url = 'https://d2hbxkrooc.execute-api.eu-west-1.amazonaws.com/dev/individual-tasks';
+    var url = 'https://d2hbxkrooc.execute-api.eu-west-1.amazonaws.com/dev/group-tasks';
 
     http.onreadystatechange = function() {
       if (http.readyState == XMLHttpRequest.DONE) {
         submit.disabled = false;
-        if (http.status == 204) {
+        if (http.status == 201) {
           return window.location.href = 'thank-you-for-creating-task.html';
         }
         errorMessage.style.display = 'block';
         edit.style.display = 'inline-block';
         if (http.status == 400) {
           errorMessage.innerHTML = 'الرجاء التأكّد من تعبئة الحقول المطلوبة بالشكل الصحيح.';
-        }
-        if (http.status == 404) {
-          errorMessage.innerHTML = 'الرجاء التأكّد من صحّة البريد الإلكتروني للمُرشدين ومن تسجيلهم في البرنامج.';
         }
         if (http.status == 401) {
           errorMessage.innerHTML = 'لا يُمكن الوصول إلى هذه الصفحة.';
@@ -240,18 +276,17 @@
       feedbackPreview.innerHTML = (feedback.value == '') ? '' : feedback.value.replace(/(?:\r\n|\r|\n)/g, '<br />') + '<br /><br />';
       descriptionPreview.innerHTML = description.value.replace(/(?:\r\n|\r|\n)/g, '<br />') + '<br /><br />';
       expiresAfterPreview.innerHTML = expiresAfter.value;
-      channelPreview.innerHTML = channel.value;
+      publicChannelPreview.innerHTML = publicChannel.value;
 
-      var parsedReferences = parseReferences(userReferences);
+      references = parseReferences(userReferences);
       var referencesPreviewHTML = '';
 
-      if (parsedReferences.length == 0) {
+      if (references.length == 0) {
         referencesPreview.innerHTML = '';
       } else {
         referencesPreviewHTML = 'المراجع:<br />';
-        for (var i = 0; i < parsedReferences.length; i++) {
-          referencesPreviewHTML += '<br />- ' + parsedReferences[i].title + ' (<a href="#">' + parsedReferences[i].url + '</a>).';
-          references += '- ' + parsedReferences[i].title + ' (' + parsedReferences[i].url + ').\n';
+        for (var i = 0; i < references.length; i++) {
+          referencesPreviewHTML += '<br />- ' + references[i].title + ' (<a href="#">' + references[i].url + '</a>).';
         }
         referencesPreviewHTML += '<br /><br />';
       }
@@ -286,9 +321,9 @@
         'title': title.value,
         'feedback': feedback.value,
         'description': description.value,
-        'mentors': mentors.value,
-        'skill': skill.value,
-        'channel': channel.value,
+        'mentorEmails': parseMentors(mentorEmailsElement.value),
+        'skills': parseSkills(skillsElement.value),
+        'publicChannel': publicChannel.value,
         'expiresAfter': expiresAfter.value,
         'references': references,
       });
