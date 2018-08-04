@@ -105,7 +105,7 @@
         if (error) {
           Cookies.remove('accessToken');
         } else {
-          Cookies.set('accessToken', authResult.accessToken);
+          Cookies.set('accessToken', authResult.accessToken, { expires: 7 });
         }
         window.location.reload();
       });
@@ -143,7 +143,7 @@
           loading.style.display = 'none';
           if (http.status == 200) {
             var response = JSON.parse(http.response);
-            Cookies.set('email', response.email);
+            Cookies.set('email', response.email, { expires: 7 });
             // contributorPicture.src = response.picture;
             // contributorFullname.innerHTML = response.fullname;
             // contributorEmail.innerHTML = response.email;
@@ -178,7 +178,7 @@
           loading.style.display = 'none';
           if (http.status == 200) {
             var response = JSON.parse(http.response);
-            Cookies.set('email', response.email);
+            Cookies.set('email', response.email, { expires: 7 });
             // traineePicture.src = response.picture;
             // traineeFullname.innerHTML = response.fullname;
             // traineeEmail.innerHTML = response.email;
