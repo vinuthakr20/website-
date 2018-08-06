@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Language" content="ar" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="hanadi.css" />
+  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS5SURBVGhD7VhbT1xVFEYfjA8an0xM1MQ/4Ksm+sBD58acw8DA3jNcLMzItOWSthJMiwIFWrAYi1qTqrUxwXgjFkNbW6SWak1Te1GkUIECLdOBKaXlDgWsNS7XnrPPmTNwhtBxmCHmfMkXCPuctb5vr7332pwEHTp06NChQ4eO/zESKX3MIBCbUSTlRpF+YBRII/7+iUkku02iI9ViIU/yR9cnjMmOl1HwcRT/p0mksALvo6kTRjHdxF9dHzClOJ9lwtRizckO8BQUw443q6Gsci+U7NwF7s1bA39XP2cSyGlzivM5Hip+YLOKVbgjC9tcVAItrafh9u0JWFy8r3Byag6Ghkeg9+oAfPFVE7y6ZbtiBt+fYUuRh4w9AvtAIH8zMXaHC062/QwLC3+FGFBzfv4ejI6Ogc/nhxs3huHLxiawkY2yIbbcnDx07GC0pr9oFOg8E5GX/xp4vTc1xWtxfHw6YIbx4qUOyHbnS5URyD2TNf0lnmLtkZiY+yguh2ss+SvuAvD7RzUFr8QpXGqymY6OLnBu3MQrQ/w2m+1xnmptgTNXw5ImpWRAT+91TaGrodrMqbYzykFgtJKDZoFWYZ4jJoGeMVnJYZZTEHKe5hL+O9hs4azdZQkPHGzQFPggHBubUsyUVtTwqoQnGhqxCE7K5UQOg0g8LKA1NXPZyRQpR0buwMeHPgOLzRki2mxzgGDPBMvSI5uNifQCpfQRLuvBgTPyAwtUVbNPU1QkrN//kSLQ7siFPW/VQ3dPf2BsYmImUK1z53+Dsl21S0yRWxGbkXtG87HWZYIiZba7MCCsvGovCp9dNj41fVdZft29/ZCZu0UxY0yml7m01UPq4FKAy509yxJGyqt9Xmj78eyKPUi9l7zeIchyFShmNoikkEsMj8rKyoexhG6sxEV8CZuW9HKqIwdq394Pff1ezcTRJjM57L+lmOnruw5JtgxuhsxwudqwWulTeBc6L4vXojU1AxoPH9VMHm2qGyljTd27QR3hGqnBQJ/Ajd0tP/h6aRV8f/InuPJHH/za3gUNn38DjmyPEuiXC+2ayaPJubnFECOdXT3s9JI0WOnXXHoosBEdYg+wJtXU3KIZmM0Qu9nSLA/0D/g0n4k21UYYBXtWwAhO+iUuPQiLxf4MDgQug9FoetEku0GrjaRluKSKCOQalx8EbuxCNiimZQVOC62A8aLaBGO2SzqKceIbufwg0MiHbHBbSZlmsHhx6R4ZGBgEUV5aIi3m8oPA46yBDZaW79EMGC/KXV7mt83HpWWF3JBEnufyg8CK1LHBnLwizYDxIvt3QTbBmqJr01ZuhPRw6aHAa7NFdtr++xXNoLHm5ORsSDX2vXdAqQbuD8Klh4JdxHDQyx7Ky98O4xPTmsFjxdnZBRgauqlUov794CUTT6tjKPkhSbkG0IgdH/xHNhOvykxPz4MPTQwO+uDod63gyS9WVYJ2ssbNJYcHmnlDNsOY4ykKNMDq2vo1Z1XNO1BRXQc7y3ZDwbYd6o8UEgXasioTMtAMxfL5QoLEkwIZNCTTTHaZ5RJXD/axwWxNT5M+f9IjeKqdihXxRDqBPz/FvBVo4gWUE34/6NChQ4cOHTp0rFckJPwL4qQcu4ZL4ykAAAAASUVORK5CYII=" />
+  <title>أنظمة غيمة - Cloud Systems - تصحيح إجابة مهمّة جماعيّة</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-1.8.3.min.js"
+    integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8="
+    crossorigin="anonymous"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56731261-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-56731261-3');
+  </script>
+</head>
+<body>
+  <nav id="error-message" class="error">
+    Something went wrong!
+  </nav>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">الرئيسيّة</a>
+      </li>
+      <li id="user-email"></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS5SURBVGhD7VhbT1xVFEYfjA8an0xM1MQ/4Ksm+sBD58acw8DA3jNcLMzItOWSthJMiwIFWrAYi1qTqrUxwXgjFkNbW6SWak1Te1GkUIECLdOBKaXlDgWsNS7XnrPPmTNwhtBxmCHmfMkXCPuctb5vr7332pwEHTp06NChQ4eO/zESKX3MIBCbUSTlRpF+YBRII/7+iUkku02iI9ViIU/yR9cnjMmOl1HwcRT/p0mksALvo6kTRjHdxF9dHzClOJ9lwtRizckO8BQUw443q6Gsci+U7NwF7s1bA39XP2cSyGlzivM5Hip+YLOKVbgjC9tcVAItrafh9u0JWFy8r3Byag6Ghkeg9+oAfPFVE7y6ZbtiBt+fYUuRh4w9AvtAIH8zMXaHC062/QwLC3+FGFBzfv4ejI6Ogc/nhxs3huHLxiawkY2yIbbcnDx07GC0pr9oFOg8E5GX/xp4vTc1xWtxfHw6YIbx4qUOyHbnS5URyD2TNf0lnmLtkZiY+yguh2ss+SvuAvD7RzUFr8QpXGqymY6OLnBu3MQrQ/w2m+1xnmptgTNXw5ImpWRAT+91TaGrodrMqbYzykFgtJKDZoFWYZ4jJoGeMVnJYZZTEHKe5hL+O9hs4azdZQkPHGzQFPggHBubUsyUVtTwqoQnGhqxCE7K5UQOg0g8LKA1NXPZyRQpR0buwMeHPgOLzRki2mxzgGDPBMvSI5uNifQCpfQRLuvBgTPyAwtUVbNPU1QkrN//kSLQ7siFPW/VQ3dPf2BsYmImUK1z53+Dsl21S0yRWxGbkXtG87HWZYIiZba7MCCsvGovCp9dNj41fVdZft29/ZCZu0UxY0yml7m01UPq4FKAy509yxJGyqt9Xmj78eyKPUi9l7zeIchyFShmNoikkEsMj8rKyoexhG6sxEV8CZuW9HKqIwdq394Pff1ezcTRJjM57L+lmOnruw5JtgxuhsxwudqwWulTeBc6L4vXojU1AxoPH9VMHm2qGyljTd27QR3hGqnBQJ/Ajd0tP/h6aRV8f/InuPJHH/za3gUNn38DjmyPEuiXC+2ayaPJubnFECOdXT3s9JI0WOnXXHoosBEdYg+wJtXU3KIZmM0Qu9nSLA/0D/g0n4k21UYYBXtWwAhO+iUuPQiLxf4MDgQug9FoetEku0GrjaRluKSKCOQalx8EbuxCNiimZQVOC62A8aLaBGO2SzqKceIbufwg0MiHbHBbSZlmsHhx6R4ZGBgEUV5aIi3m8oPA46yBDZaW79EMGC/KXV7mt83HpWWF3JBEnufyg8CK1LHBnLwizYDxIvt3QTbBmqJr01ZuhPRw6aHAa7NFdtr++xXNoLHm5ORsSDX2vXdAqQbuD8Klh4JdxHDQyx7Ky98O4xPTmsFjxdnZBRgauqlUov794CUTT6tjKPkhSbkG0IgdH/xHNhOvykxPz4MPTQwO+uDod63gyS9WVYJ2ssbNJYcHmnlDNsOY4ykKNMDq2vo1Z1XNO1BRXQc7y3ZDwbYd6o8UEgXasioTMtAMxfL5QoLEkwIZNCTTTHaZ5RJXD/axwWxNT5M+f9IjeKqdihXxRDqBPz/FvBVo4gWUE34/6NChQ4cOHTp0rFckJPwL4qQcu4ZL4ykAAAAASUVORK5CYII=">
+      </a>
+    </div>
+    <div class="breif">
+      <strong>تصحيح إجابة مهمّة جماعيّة:</strong> يُمكن قبول إجابة المجموعة أو رفضها، كما يُمكن تقييم المهارات لكل عضوٍ في المجموعة وتقييم قائدها كذلك.
+    </div>
+    <div class="form-container">
+      <form id="form">
+        <div>
+          <label class="form-label" for="ratingsGrid">التقييم (مطلوب)</label>
+          <!-- <p class="form-p">حدّد المهارات لكل عضو تراه يستحقّها. بإمكانك أن تمنح عضوًا ما أكثرَ من مهارة، كما يُمكنك أن تمنحه مهارةً واحدةً، ويُمكنك أيضًا ألاّ تمنحه أيّ مهارة. التزم الصدق في توزيع المهارات وسوف يتم مراجعة الإجابات والتقييم من قبل الـمُرشدين. للبدء بتقييم الأعضاء انقر على "أيقونة قلم الرصاص الزرقاء" بجانب كلّ عضو.</p> -->
+          <div id="ratingsGrid"></div>
+        </div>
+        <div class="form-buttons">
+          <button id="accept" class="submit">قبول الإجابة</button>
+          <button id="reject" class="secondary">رفض الإجابة</button>
+        </div>
+      </form>
+    </div>
+    <div class="copyrights">
+      (ح) جميع الحقوق محفوظة لمؤسّسة أنظمة غيمة (Cloud Systems).
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    var id = getQueryString('id');
+    var accessToken = Cookies.get('accessToken');
+    var userRatings = [];
+    var parsedRatings = [];
+
+    function parseRatings(ratings) {
+      var list = [];
+      for (var i=0; i<ratings.length; i++) {
+        var item = $.extend({}, ratings[i]);
+        var id = item['id'];
+        var skills = [];
+        delete item['id'];
+        delete item['name'];
+        for (var key in item) {
+          if (item[key]) {
+            skills.push(key);
+          }
+        }
+        list.push({
+          id: id,
+          skills: skills,
+        });
+      }
+      return list;
+    }
+
+    function hideErrorMessage() {
+      return $('#error-message').hide();
+    }
+
+    function showErrorMessage(message) {
+      return $('#error-message').html(message).show();
+    }
+
+    function accept(event) {
+      if (event) event.preventDefault();
+      correct('accept');
+    }
+
+    function reject(event) {
+      if (event) event.preventDefault();
+      correct('reject');
+    }
+
+    function correct(action) {
+      parsedRatings = parseRatings(userRatings);
+
+      $('#accept').prop('disabled', true);
+      $('#reject').prop('disabled', true);
+
+      hideErrorMessage();
+
+      $.ajax({
+        type: 'POST',
+        url: 'https://d2hbxkrooc.execute-api.eu-west-1.amazonaws.com/dev/group-tasks/correct',
+        headers: {
+          'Authorization': 'Bearer ' + accessToken,
+        },
+        contentType: 'application/json',
+        data: JSON.stringify({id: id, action: action, ratings: parsedRatings}),
+        dataType: 'json',
+        success: function(data) {
+          hideErrorMessage();
+          return window.location.href = 'thank-you-for-sending-email';
+        },
+        error: function(data) {
+          var message = '';
+          if (data.status == 400) {
+            message = 'الرجاء التأكّد من تعبئة الحقول المطلوبة ومن دخول رابط صحيح.';
+          } else if (data.status == 409) {
+            message = 'لقد قمت بتسليم الإجابة مُسبقًا.';
+          } else if (data.status == 406) {
+            message = 'لا يُمكن تصحيح المهمّة.';
+          } else if (data.status == 408) {
+            message = 'انتهت فترة تسليم الإجابة.';
+          } else if (data.status == 410) {
+            message = 'حدث خطأ ما، الرجاء المحاولة لاحقًا.';
+          }
+          $('#accept').prop('disabled', false);
+          $('#reject').prop('disabled', false);
+          showErrorMessage(message);
+        }
+      });
+    }
+
+    function getUserInfo(callback) {
+      if (!accessToken) {
+        return callback(null);
+      } else {
+        $.ajax('https://d2hbxkrooc.execute-api.eu-west-1.amazonaws.com/dev/auth/contributors', {
+          headers: {
+            'Authorization': 'Bearer ' + accessToken,
+          },
+          success: function(data) {
+            return callback(data);
+          },
+          error: function(data) {
+            return callback(null);
+          }
+        });
+      }
+    }
+
+    function getGroupTaskInfo(callback) {
+      if (!id) {
+        return callback(null);
+      } else {
+        $.ajax('https://d2hbxkrooc.execute-api.eu-west-1.amazonaws.com/dev/group-tasks', {
+          data: {
+            id: id,
+          },
+          success: function(data) {
+            return callback(data);
+          },
+          error: function(data) {
+            return callback(null);
+          }
+        });
+      }
+    }
+
+    function redirectToLogin() {
+      Cookies.remove('accessToken');
+      Cookies.remove('email');
+      Cookies.set('redirectUri', window.location.href);
+      window.location.href = 'profile.html';
+    }
+
+    $(function() {
+
+      hideErrorMessage();
+
+      getUserInfo(function(userInfo) {
+        if (!userInfo) return redirectToLogin();
+        updateLoginBox(userInfo);
+        getGroupTaskInfo(function(groupTaskInfo) {
+          // Otherwise, get the id of the group task and fetch its data.
+          var fields = [
+            { type: 'control', deleteButton: false },
+            { name: 'id', type: 'text', editing: false, sorting: false, visible: false },
+            { name: 'name', title: 'العضو', type: 'text', editing: false, sorting: false },
+          ];
+          for (var i=0; i<groupTaskInfo.skills.length; i++) {
+            fields.push({ name: groupTaskInfo.skills[i], type: 'checkbox', title: groupTaskInfo.skills[i], sorting: false });
+          }
+          userRatings = [];
+          for (var m=0; m<groupTaskInfo.group.members.length; m++) {
+            var isLeader = (groupTaskInfo.group.members[m].role == 'leader') ? ' (القائد)' : '';
+            var rating = {
+              name: groupTaskInfo.group.members[m].fullname + isLeader,
+              id: groupTaskInfo.group.members[m].id,
+            };
+            var chosen = groupTaskInfo.ratings.filter(function(r) {
+              return r.id == groupTaskInfo.group.members[m].id;
+            })[0];
+            if (chosen) {
+              for (var s=0; s<chosen.skills.length; s++) {
+                rating[chosen.skills[s]] = true;
+              }
+            }
+            userRatings.push(rating);
+          }
+          $('#ratingsGrid').jsGrid({
+            width: '100%',
+            height: '300px',
+            inserting: false,
+            editing: true,
+            sorting: true,
+            paging: true,
+            data: userRatings,
+            confirmDeleting: false,
+            noDataContent: 'لم يتم إضافة إجابات حتّى الآن.',
+            fields: fields,
+          });
+        });
+      });
+
+      $('#accept').click(accept);
+      $('#reject').click(reject);
+    });
+
+    function updateLoginBox(userInfo) {
+      $('#user-email').html('<a href="profile.html">' + userInfo.email + '</a>');
+    }
+
+  </script>
+</body>
+</html>

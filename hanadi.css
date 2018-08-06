@@ -93,7 +93,7 @@ h2, strong, h3{
   font-family: 'Dubai-Bold', sans-serif;
 }
 
-.disabled, .form-buttons input[type="submit"]:disabled, .submit:disabled{
+.disabled, .form-buttons input[type="submit"]:disabled, .submit:disabled, .secondary:disabled{
   padding: 10px; text-decoration: none; color: #ccc;
   border-radius: 4px; border: 1px solid #ccc; background-color: #fff;
   font-family: 'Dubai-Bold', sans-serif; cursor: default;
