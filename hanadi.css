@@ -118,11 +118,11 @@ h2, strong, h3{
   width: 100%;
 }
 
-.form-input label{
+.form-input label, .form-label{
   display: block; padding-bottom: 6px;
 }
 
-.form-input p{
+.form-input p, .form-p{
   text-align: justify;
   padding-bottom: 10px;
   font-size: 14px;
