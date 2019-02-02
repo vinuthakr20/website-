@@ -1,0 +1,228 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css);
+@import url(https://cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
+
+
+body{
+    background-image: linear-gradient( #3c1f22, #272727);
+}
+
+*{
+  margin: 0; padding: 0; line-height: 1.5;
+  font-family: 'Dubai-Regular', sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a{
+  color: #c6ee57;
+}
+
+nav{
+  padding: 10px; text-align: center;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav ul li a{
+  color: #666;
+}
+
+.container{
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2, strong, h3{
+  font-family: 'Dubai-Bold', sans-serif;
+  font-weight: normal;
+  color: #fff;
+  direction: rtl;
+}
+
+p{
+  color: rgb(202, 201, 201);
+  direction: rtl;
+}
+
+.logo{
+  text-align: center;
+  padding: 40px;
+  padding-bottom: 20px;
+}
+
+.breif{
+  text-align: center;
+  padding: 10px;
+  margin: 30px;
+  margin-top: 0;
+}
+
+.feature {
+  width: 33%; display: inline-block;
+  margin: 0; padding: 0; border: 10px solid transparent;
+  text-align: center;
+}
+
+.feature p{
+  margin-top: 10px;
+}
+
+
+.copyrights{
+  margin-top: 20px; border-top: 1px solid #ccc;
+  color: #ccc; font-size: 14px; padding-top: 10px;
+  margin-bottom: 20px; text-align: center;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeLineContainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeLineContainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(232, 248, 4);
+  border: 4px solid rgb(232, 248, 4);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 31px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 31px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: transparent;
+  border: medium solid white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* For large screens. */
+@media (min-width: 768px){
+  .container {
+    width: 750px;
+  }
+}
+
+/* For small screens. */
+@media (max-width: 500px){
+  .logo{
+    padding: 30px;
+    padding-bottom: 10px;
+  }
+  .breif{
+    margin: 10px;
+    margin-top: 0;
+  }
+  .feature {
+    width: 100%;
+  }
+  .copyrights{
+    font-size: 12px;
+  }
+
+  .timeline::after {
+  left: 31px;
+  }
+  
+  .timeLineContainer {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  .timeLineContainer::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  .right {
+  left: 0%;
+  }
+}
